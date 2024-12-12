@@ -1,100 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Ana Helouise</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
-
 <body>
     <section class="showcase-header">
         <header>
             <h2 class="logo">Portfólio</h2>
-            <nav class="toggle">
-                <a href="index.html">Inicio</a>
-                <a href="eventos.html">Eventos</a>
-                <a href="Membros.html">Membros</a>
-                <a href="Livros.html">Livros</a>
-                <!--<a href="contato.html">Contato</a>-->
-            </nav>
+            <!--<nav class="toggle">
+                <a href="anahelouise.html">Inicio</a>
+                <a href="curriculo.html">Curriculo</a>
+                <a href="projetos.html">Projetos</a>
+            </nav>-->
         </header>
     </section>
-
-    <section class="showcase-SobreMim">
-        <img src="src/img/sobremim.jpg" alt="Poeta do Mês">
-        <div class="text-SobreMim">
-            <h1>Quem sou eu?</h1>
-            <p>Eu sou Ana Helouise, tenho 21 anos.</p>
-            <p>Sou Desenvolvedora Front-End, apaixonada por transformar ideias em interfaces funcionais e atraentes. Minha trajetória na tecnologia é movida pelo amor ao design, à programação e à busca por soluções criativas para os mais diversos desafios.</p>
-            <p>Atualmente, estou cursando Sistemas de Informação na FEPI, onde aprimoro minhas habilidades e mergulho ainda mais fundo no universo da tecnologia. 🚀</p>
-            <p><strong>Links sociais: </strong></p>
-            <div class="buttons-SobreMim">
-                <a href="https://github.com/anahelouise" aria-label="GitHub" target="_blank" class="button-info">
-                    <div class="icon"></div>
-                    GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/anahelouise/" aria-label="LinkedIn" target="_blank" class="button-info">
-                    <div class="icon"></div>
-                    LinkedIn
-                </a>
-                <a href="https://www.instagram.com/anahelouise/" aria-label="Instagram" target="_blank" class="button-info">
-                    <div class="icon"></div>
-                    Instagram
-                </a>
-                <a href="https://www.threads.net/@anahelouise?hl=pt-br" aria-label="Threads" target="_blank" class="button-info">
-                    <div class="icon"></div>
-                    Threads
-                </a>
+    <section class="showcase-anahelouise">
+        <img src="src/img/sobremim.jpg" alt="Publico">
+            <div class="text-sobremim">
+                <h5>Olá! Seja bem-vindo!</h5>
+                <h1>Quem sou eu?</h1>
+                <p>Eu sou <strong>Ana Helouise</strong>, tenho 21 anos.</p>
+                <p>Sou Desenvolvedora Front-End, apaixonada por transformar ideias em interfaces funcionais e atraentes. Minha trajetória na tecnologia é movida pelo amor ao design, à programação e à busca por soluções criativas para os mais diversos desafios. </p>
+                <p>Atualmente, estou cursando Sistemas de Informação na FEPI, onde aprimoro minhas habilidades e mergulho ainda mais fundo no universo da tecnologia. 🚀</p>
+                <div class="buttons-opcao">
+                    <div class="option">
+                        <h2>Perfil Profissional</h2>
+                        <p>Confira meu currículo e descubra mais sobre minha trajetória, competências e conquistas profissionais.</p>
+                        <a href="curriculo.html" target="_blank"  class="button">
+                            <div class="icon"></div>
+                            Curriculo
+                        </a>
+                    </div>
+                    <div class="option">
+                        <h2>Meus Projetos</h2>
+                        <p>Cada linha de código e cada detalhe refletem minha dedicação em transformar ideias em realidade.</p>
+                        <a href="projetos.html" target="_blank"  class="button">
+                            <div class="icon"></div>
+                            Projetos
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <div class="header-projetos">
-        <h2>Projetos</h2>
-        <p class="descricao-projetos">Cada projeto é uma experiência única. <br> Abaixo, compartilho projetos que desenvolvi, cada um com <br> seu próprio impacto e contribuição para o meu crescimento.</p>
-    </div>
-    <section class="grade-projetos">
-        <div class="projetos-card">
-            <img src="src/img/CapaProjetos/Capa-NUMALE.png" alt="Capa do Projeto" class="projeto-image">
-            <div class="projeto-content">
-                <p class="projeto-author">José Regi</p>
-                <h3 class="projeto-title">NUMALE</h3>
-                <p class="projeto-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="https://anahelouise.github.io/numale.br/" target="_blank" class="projeto-button">Visualizar</a>
+    <!--<div class="footer">
+        <div class="footer-content">
+            <div class="logo-footer">Ana Helouise</div>
+            <div class="social-icons">
+                <a href="https://github.com/anahelouise" aria-label="GitHub" target="_blank" class="social-icon GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/anahelouise/" aria-label="LinkedIn" target="_blank" class="social-icon LinkedIn">LinkedIn</a>
+                <a href="https://www.threads.net/@anahelouise?hl=pt-br" aria-label="Threads" target="_blank" class="social-icon Threads">Threads</a>
+                <a href="https://www.instagram.com/anahelouise/" aria-label="Instagram" target="_blank" class="social-icon Instagram">Instagram</a>
             </div>
         </div>
-
-        <div class="projetos-card">
-            <img src="src/img/CapaProjetos/Capa-AttackOnTitan.png" alt="Capa do Projeto" class="projeto-image">
-            <div class="projeto-content">
-                <p class="projeto-author">Ana Helouise</p>
-                <h3 class="projeto-title">Attack On Titan Wiki</h3>
-                <p class="projeto-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="https://anahelouise.github.io/attackontitanwiki/" target="_blank" class="projeto-button">Visualizar</a>
-            </div>
+        <hr>
+        <div class="footer-info">
+            <p>© 2024 Ana Helouise</p>
+            <p>Todos os direitos reservados.</p>
         </div>
-
-        <div class="projetos-card">
-            <img src="src/img/CapaProjetos/Capa-NUMALE.png" alt="Capa do Projeto" class="projeto-image">
-            <div class="projeto-content">
-                <p class="projeto-author">José Regi</p>
-                <h3 class="projeto-title">NUMALE</h3>
-                <p class="projeto-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" target="_blank" class="projeto-button">Visualizar</a>
-            </div>
-        </div>
-
-        <div class="projetos-card">
-            <img src="src/img/CapaProjetos/Capa-NUMALE.png" alt="Capa do Projeto" class="projeto-image">
-            <div class="projeto-content">
-                <p class="projeto-author">Antologia</p>
-                <h3 class="projeto-title">NUMALE</h3>
-                <p class="projeto-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" target="_blank" class="projeto-button">Visualizar</a>
-            </div>
-        </div>
-    </section>
+    </div>-->
 </body>
-
 </html>
