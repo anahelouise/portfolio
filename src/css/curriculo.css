@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Estilos Gerais */
+
+
+
+h1, h2, h3 {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Container Principal */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Perfil */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4a90e2;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.profile-details h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+    margin-bottom: 0px
+}
+
+.profile-details p {
+    font-size: 1rem;
+    color: #383838;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.contact-info span {
+    color: #4a90e2;
+    font-size: 1.2rem;
+}
+
+.contact-info a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+/* Certificações */
+.certifications ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* Competências */
+.skills ul {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+/* Idiomas */
+.languages ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+}

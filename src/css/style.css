@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 6%;
+    z-index: 1000;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header .logo {
+    color: black;
+    cursor: pointer;
+}
+
+.toggle a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Showcase Header */
+.showcase-header {
+    background: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 6%;
+    gap: 50px;
+}
+
+.showcase img {
+    height: 600px;
+    flex: 1 0 0;
+    border-radius: 30px;
+}
+
+/* Text */
+.text {
+    position: relative;
+    z-index: 10;
+    margin-top: 0px;
+}
+
+.text h1 {
+    color: #000;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #000;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h6 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #000;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.showcase-anahelouise {
+    background: #fff;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 6%;
+    gap: 50px;
+}
+
+.showcase-anahelouise img {
+    height: 600px;
+    flex: 1 0 0;
+    border-radius: 30px;
+}
+
+/* Estilos de texto */
+.text-sobremim {
+    position: relative;
+    z-index: 10;
+    margin-top: 0px;
+}
+
+.text-sobremim h1 {
+    color: #000;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+.text-sobremim h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-top: 13px;
+}
+
+.text-sobremim p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.conteudo-opcao {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px; 
+}
+
+.text-sobremim {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 10px; 
+}
+
+.buttons-opcao {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+.option {
+    flex: 1; 
+    border-radius: 8px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+
+.footer {
+    background-color: white;
+    margin-top: auto;
+    padding: 10px 6%;
+}
+.footer-content {
+    max-width: 1200px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-footer {
+    font-weight: bold;
+    font-size: 24px;
+}
+.social-icons a {
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer hr {
+    border: none;
+    margin: 20px 0;
+}
+
+.footer-info a {
+    color: #665;
+    text-decoration: none;
+}
+.footer-info {
+    text-align: center;
+    font-size: 14px;
+    color: #665;
+    margin-bottom: 15px;
+}
+
