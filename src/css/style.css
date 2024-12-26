@@ -59,6 +59,96 @@ header .logo {
     border-radius: 30px;
 }
 
+.logo-link {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.logo-link:hover .logo {
+    color: #000000; 
+}
+
+.toggle a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.dropdown > a:hover {
+    color: #000000; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    padding: 10px 0;
+    transform: translateY(10px); 
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    padding-left: 25px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown > a::after {
+    content: '▼';
+    font-size: 12px;
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover > a::after {
+    transform: rotate(180deg);
+    color: #000000;
+}
+
 /* Text */
 .text {
     position: relative;
@@ -109,7 +199,7 @@ header .logo {
 
 .showcase-anahelouise {
     background: #fff;
-    min-height: 95vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -195,34 +285,11 @@ header .logo {
     border-radius: 4px;
 }
 
-
 .footer {
     background-color: white;
     margin-top: auto;
     padding: 10px 6%;
 }
-.footer-content {
-    max-width: 1200px;
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo-footer {
-    font-weight: bold;
-    font-size: 24px;
-}
-.social-icons a {
-    margin-left: 10px;
-    color: black;
-    text-decoration: none;
-}
-
-.footer hr {
-    border: none;
-    margin: 20px 0;
-}
-
 .footer-info a {
     color: #665;
     text-decoration: none;
@@ -231,6 +298,119 @@ header .logo {
     text-align: center;
     font-size: 14px;
     color: #665;
-    margin-bottom: 15px;
+}
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .showcase-header {
+        flex-direction: column;
+        gap: 20px; 
+        padding: 0 10%;
+    }
+
+    .showcase img {
+        height: 350px; 
+        width: auto;
+    }
+
+    .text h1 {
+        font-size: 34px; 
+    }
+
+    .text p {
+        font-size: 16px;
+    }
 }
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 4%;
+    }
+
+    .toggle a {
+        font-size: 16px; 
+    }
+
+    .showcase img {
+        height: 280px; 
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .text h1 {
+        font-size: 28px; 
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 15px; 
+        text-align: center;
+        margin-top: 10px; 
+    }
+
+    .buttons-opcao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px; 
+        margin-top: 20px;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        justify-content: center;
+        padding: 12px 24px; 
+        border: 2px solid #000;
+        border-radius: 10px; 
+        transition: background-color 0.3s;
+    }
+
+    .button:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 2%;
+    }
+
+    .showcase-header {
+        margin: 10px 2%;
+        gap: 15px; 
+    }
+
+    .text h1 {
+        font-size: 22px; 
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 14px; 
+        text-align: center;
+    }
+
+    .showcase img {
+        height: 220px; 
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .buttons-opcao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 20px; 
+    }
+}
